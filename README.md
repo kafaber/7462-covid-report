@@ -1,9 +1,9 @@
 Minnesota COVID Report
 ================
 
-Report last run: 2023-03-03 17:49:11
+Report last run: 2023-03-03 21:34:12
 
-## Introduction
+## Introduction with edits
 
 This is an example report that uses COVID-19 data from the New York
 Times to illustrate the use of automation processes.
@@ -60,7 +60,7 @@ rate_data %>%
   xlab(NULL) +
   ylab("7-day COVID-19 case total per 100,000 population") +
   scale_color_discrete(name = "") +
-  theme_minimal() +
+  theme_gray() +
   ggtitle("COVID-19 rates for the ten most populous Minnesota counties", 
           subtitle = paste("Latest data:", max(rate_data$date)))
 ```
